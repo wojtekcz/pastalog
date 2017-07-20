@@ -30,7 +30,7 @@ module.exports = [
           test: /\.js$/,
           loader: 'babel-loader',
           query: {
-            presets: ['es2015-webpack', 'react'],
+            presets: ['es2015', 'react'],
           },
         },
         {
@@ -64,7 +64,7 @@ module.exports = [
           test: /\.js$/,
           loader: 'babel-loader',
           query: {
-            presets: ['es2015-webpack', 'react'],
+            presets: ['es2015', 'react'],
           },
         },
         {
@@ -105,7 +105,7 @@ module.exports = [
           test: /\.js$/,
           loader: 'babel-loader',
           query: {
-            presets: ['es2015-webpack', 'react'],
+            presets: ['es2015', 'react'],
           },
         },
       ],
