@@ -37,11 +37,20 @@ pastalog --serve 8120
 #### Just node.js server (useful if you don't want the python API)
 
 ```bash
-git clone https://github.com/rewonc/pastalog && cd pastalog
+git clone https://github.com/wojtekcz/pastalog && cd pastalog
 npm install
 npm run build
 npm start -- --port 8120
-# - Open up http://localhost:8120/ to see the server in action.
+```
+
+#### Docker
+
+```bash
+git clone https://github.com/wojtekcz/pastalog && cd pastalog
+docker run -it --rm --name pastalog -p 8120:8120 -v "$PWD":/app -w /app node:6.11.1 bash
+npm install
+npm run build
+npm start -- --port 8120
 ```
 
 ## Logging data
